@@ -1,181 +1,74 @@
 # xrom4ik
-<td>oot@50a455a6a059:/# $ pwd </td>
+1)root@f798856ead4d:/home# ls celery chairs classic create dir1 dir2 dir3 file3.txt practice1 records test vegetables root@f798856ead4d:/home# mkdir classics root@f798856ead4d:/home# ls celery chairs classic classics create dir1 dir2 dir3 file3.txt practice1 records test vegetables
 
-bash: $: command not found
+2)root@f798856ead4d:/home# rmdir classics root@f798856ead4d:/home# ls celery chairs classic create dir1 dir2 dir3 file3.txt practice1 records test vegetables
 
-root@50a455a6a059:/# ~ $ pwd
+3)root@f798856ead4d:/home# uname -a Linux f798856ead4d 4.19.0-16-amd64 #1 SMP Debian 4.19.181-1 (2021-03-19) x86_64 x86_64 x86_64 GNU/Linux
 
-bash: /root: Is a directory
+4)root@f798856ead4d:/home# uname -s Linux
 
-root@50a455a6a059:/# ~ $ cd /
+5)root@f798856ead4d:/home# uname -r 4.19.0-16-amd64
 
-bash: /root: Is a directory
+6)root@f798856ead4d:/home# date Fri Oct 15 15:47:41 MSK 2021
 
-root@50a455a6a059:/# $ ls
+9)/clean
 
-bash: $: command not found
+10)root@f798856ead4d:/home#pwd /home
 
-root@50a455a6a059:/# / @ ls
+11)root@f798856ead4d:/home# cd ~ root@f798856ead4d:~# ls classics dir1 dir2 dir3 file1 file2 file3 t.sh test test1 test2
 
-bash: /: Is a directory
+12)root@f798856ead4d:# ls //отображает содержимое каталога classics dir1 dir2 dir3 file1 file2 file3 t.sh test test1 test2 root@f798856ead4d:# ls -R //рекурсивно отображает содержимое поддиректорий .: classics dir1 dir2 dir3 file1 file2 file3 t.sh test test1 test2
 
-root@50a455a6a059:/# / $ ls -F --color
+./classics:
 
-bash: /: Is a directory
+./dir1: f1
 
-root@50a455a6a059:/# ~ mkdir test
+./dir2:
 
-bash: /root: Is a directory
+./dir3:
 
-root@50a455a6a059:/# pwd
-
-/
-root@50a455a6a059:/# ls
-
-1-t.txt  classic   error.txt  home        lib    libx32        ls-output.txt  newname  proc  sbin  tmp
-
-bin      classics  etc        house       lib32  ls-error.log  media          nol      root  srv   usr
-
-boot     dev       furniture  keldybaeva  lib64  ls-error.txt  mnt            opt      run   sys   var
-
-root@50a455a6a059:/# ls -F --color test
-
-oot@50a455a6a059:/# mkdir classics  
-
-mkdir: cannot create directory 'classics': File exists
-
-root@50a455a6a059:/# rndir classics
-
-bash: rndir: command not found
-
-root@50a455a6a059:/# rmdir classics
-
-rmdir: failed to remove 'classics': Directory not empty
-
-root@50a455a6a059:/# uname -s
-
-Linux
-
-root@50a455a6a059:/# uname -r
-
-4.19.0-16-amd64
-
-root@50a455a6a059:/# date
-
-Fri Oct 15 12:55:44 UTC 2021
-&
-
-clear
-root@50a455a6a059:~# ls
-
-test
-
-root@50a455a6a059:~# ls -R
-
-.:
-test
-
-./test:
-
-subtest
+./test: subtest
 
 ./test/subtest:
 
-root@50a455a6a059:~#
-/test/subtest:
-root@50a455a6a059:~# ls type
+./test1: subtest
 
-ls: cannot access 'type': No such file or directory
+./test1/subtest:
 
-root@50a455a6a059:~# type
+./test2: subtest
 
-root@50a455a6a059:~# type -F
+./test2/subtest:
 
-bash: type: -F: invalid option
+13)root@f798856ead4d:~# ls -a . .. .bash_history .bashrc .local .profile classics dir1 dir2 dir3 file1 file2 file3 t.sh test test1 test2
 
-type: usage: type [-afptP] name [name ...]
+14)root@f798856ead4d:~# ls -l total 32 drwxr-xr-x 2 root root 4096 Oct 15 15:52 classics drwxr-xr-x 2 root root 4096 Oct 13 16:19 dir1 drwxr-xr-x 2 root root 4096 Oct 13 16:16 dir2 drwxr-xr-x 2 root root 4096 Oct 13 16:16 dir3 -rw-r--r-- 1 root root 0 Oct 13 16:20 file1 -rw-r--r-- 1 root root 0 Oct 13 16:20 file2 -rw-r--r-- 1 root root 0 Oct 13 16:20 file3 -rw-r--r-- 1 root root 366 Oct 6 15:54 t.sh drwxr-xr-x 3 root root 4096 Oct 13 15:32 test drwxr-xr-x 3 root root 4096 Oct 15 15:36 test1 drwxr-xr-x 3 root root 4096 Oct 15 15:42 test2
 
-root@50a455a6a059:~# /ets/X11
+15)root@f798856ead4d:~# ls -F classics/ dir1/ dir2/ dir3/ file1 file2 file3 t.sh test/ test1/ test2/
 
-bash: /ets/X11: No such file or directory
+16)root@f798856ead4d:~# cd classics
 
-root@50a455a6a059:~# mkdir ect
+17)root@f798856ead4d:/classics# cd etc/X11 root@f798856ead4d:/classics/etc/X11# ls root@f798856ead4d:~/classics/etc/X11# pwd /root/classics/etc/X11
 
-root@50a455a6a059:~# mkdir ect
+18)root@f798856ead4d:~/classics/etc/X11# cd /
 
-mkdir: cannot create directory 'ect': File exists
+19)root@f798856ead4d:/classics# cd etc root@f798856ead4d:/classics/etc# pwd /root/classics/etc
 
-root@50a455a6a059:~# cd ets
+20)root@f798856ead4d:/classics/etc# printf "Hello\n" > group root@f798856ead4d:/classics/etc# cat group Hello
 
-bash: cd: ets: No such file or directory
+21)root@f798856ead4d:~/classics/etc# cat group passwd Hello Good morning
 
-root@50a455a6a059:~# mkdri etc
+22)root@f798856ead4d:~/classics/etc# cat group | head -n 5 Hello
 
-bash: mkdri: command not found
+23)root@f798856ead4d:~/classics/etc# cat passwd | tail -n 3 Good morning
 
-root@50a455a6a059:~# cd etc
+24)root@f798856ead4d:~/classics/etc# wc -l passwd
+1 passwd
 
-bash: cd: etc: No such file or directory
+25)root@f798856ead4d:~# cd student
 
+26)root@f798856ead4d:/student# touch file1 file2 file3 root@f798856ead4d:/student# ls file1 file2 file3
 
+27)root@f798856ead4d:/student# mkdir dir1 dir2 dir3 root@f798856ead4d:/student# ls dir1 dir2 dir3 file1 file2 file3
 
-root@50a455a6a059:~# mkdir ets
-
-root@50a455a6a059:~# mkdir etc
-
-root@50a455a6a059:~# mkdir ect
-
-
-mkdir: cannot create directory 'ect': File exists
-
-root@50a455a6a059:~# cd  ect
-
-root@50a455a6a059:~/ect# mkdir x11
-
-root@50a455a6a059:~/ect# cd x11 
-
-root@50a455a6a059:~/ect/x11# cd home
-
-bash: cd: home: No such file or directory
-
-root@50a455a6a059:~/ect/x11# cd ~
-
-root@50a455a6a059:~# cd etc
-
-root@50a455a6a059:~/etc# mkdir group
-
-root@50a455a6a059:~/etc# mdir password
-
-bash: mdir: command not found
-
-root@50a455a6a059:~/etc# mkdie passwd
-
-bash: mkdie: command not found
-
-root@50a455a6a059:~/etc# mkdir passwd
-
-root@50a455a6a059:~/etc# cat
-
-root@50a455a6a059:~/etc# cat ets
-
-cat: ets: No such file or directory
-
-root@50a455a6a059:~/etc# touch group
-
-root@50a455a6a059:~/etc# touc passwd
-
-bash: touc: command not found
-
-root@50a455a6a059:~/etc# touch passwd
-
-root@50a455a6a059:~/etc# cat group
-
-
-cat: group: Is a directory
-
-root@50a455a6a059:~/etc# cat passwd
-
-cat: passwd: Is a directory
-
-root@50a455a6a059:~/etc# /test/subtest:
+28)root@f798856ead4d:~/student# cp file1 dir1
 
